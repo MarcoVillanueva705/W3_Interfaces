@@ -64,5 +64,7 @@ namespace W3_Interfaces
             Level myLevel = Level.High;
             Console.WriteLine(myLevel);
         }
+        //Enum is short for "enumerations", which means "specifically listed".
+
     }
 }
