@@ -62,6 +62,16 @@ namespace W3_Interfaces
             March
         }
 
+        //You can also assign your own enum values, and the next items will update the number accordingly:
+
+        enum Colors
+        {
+            Orange,
+            Green = 5,
+            Purple,
+            Gray
+        }
+
         static void Main(string[] args)
         {
             Lemur myLemur = new Lemur();
@@ -73,9 +83,13 @@ namespace W3_Interfaces
             Console.WriteLine(myLevel);
 
             //To get the integer value from an item, you must explicitly convert the item to an int:
-
+            //output is '0'
             int myMonths = (int)Months.January;
             Console.WriteLine(myMonths);
+
+            ////output is '6'
+            int myColors = (int)Colors.Purple;
+            Console.WriteLine(myColors);
         }
         //Enum is short for "enumerations", which means "specifically listed".
 
