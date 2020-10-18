@@ -87,11 +87,30 @@ namespace W3_Interfaces
             int myMonths = (int)Months.January;
             Console.WriteLine(myMonths);
 
-            ////output is '6'
+            //output is '6'
             int myColors = (int)Colors.Purple;
             Console.WriteLine(myColors);
+
+            //Enums are often used in switch statements to check for corresponding values:
+
+            Level nextLevel = Level.Medium;
+            switch (nextLevel)
+            {
+                case Level.Low:
+                    Console.WriteLine("Level is Low");
+                    break;
+                case Level.Medium:
+                    Console.WriteLine("Level is Medium");
+                    break;
+                case Level.High:
+                    Console.WriteLine("Level is High");
+                    break;
+            }
+            //output is 'Level is Medium'
         }
         //Enum is short for "enumerations", which means "specifically listed".
-
+        //Why And When To Use Enums?
+        //Use enums when you have values that you know aren't going to change, 
+        //like month days, days, colors, deck of cards, etc.
     }
 }
