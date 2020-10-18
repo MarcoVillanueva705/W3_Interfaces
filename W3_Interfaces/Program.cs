@@ -53,6 +53,14 @@ namespace W3_Interfaces
             High
         }
 
+        //By default, the first item of an enum has the value 0. The second has the value 1, and so on.
+
+        enum Months
+        {
+            January,
+            February,
+            March
+        }
 
         static void Main(string[] args)
         {
@@ -63,6 +71,11 @@ namespace W3_Interfaces
 
             Level myLevel = Level.High;
             Console.WriteLine(myLevel);
+
+            //To get the integer value from an item, you must explicitly convert the item to an int:
+
+            int myMonths = (int)Months.January;
+            Console.WriteLine(myMonths);
         }
         //Enum is short for "enumerations", which means "specifically listed".
 
